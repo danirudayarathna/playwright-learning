@@ -9,3 +9,6 @@ def test_exmaple(page: Page) -> None:
     page.click("text=Admin")
     assert page.title() == "OrangeHRM"
 
+    username_textbox = page.locator("xpath=//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']")
+    username_textbox.fill("Sanad")
+
